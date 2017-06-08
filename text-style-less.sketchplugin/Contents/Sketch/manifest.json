@@ -19,6 +19,7 @@
   "identifier" : "com.example.sketch.b38a9896-4389-4495-b3ec-22db745d8ef0",
   "version" : "1.0",
   "description" : "Counts and selects all textlayers without a shared textstyle",
+  "icon": "icons/selectTextstylessTextlayers.png",
   "authorEmail" : "hi@hi@hamedbahrami.de",
   "name" : "Textstyleless"
 }
