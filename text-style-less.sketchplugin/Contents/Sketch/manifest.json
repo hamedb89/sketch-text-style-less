@@ -1,9 +1,9 @@
 {
-  "author" : "",
+  "author" : "Hamed Bahrami",
   "commands" : [
     {
       "script" : "script.cocoascript",
-      "name" : "TextStylelessLayerSelection",
+      "name" : "text-style-less",
       "handlers" : {
         "run" : "onRun"
       },
@@ -11,14 +11,14 @@
     }
   ],
   "menu" : {
-    "title" : "TextStylelessLayerSelection",
+    "title" : "Textstyleless",
     "items" : [
       "com.bohemiancoding.sketch.runscriptidentifier"
     ]
   },
   "identifier" : "com.example.sketch.b38a9896-4389-4495-b3ec-22db745d8ef0",
   "version" : "1.0",
-  "description" : "",
-  "authorEmail" : "",
-  "name" : "TextStylelessLayerSelection"
+  "description" : "Counts and selects all textlayers without a shared textstyle",
+  "authorEmail" : "hi@hi@hamedbahrami.de",
+  "name" : "Textstyleless"
 }
