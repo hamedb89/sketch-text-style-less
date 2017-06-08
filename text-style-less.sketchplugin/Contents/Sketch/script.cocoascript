@@ -1,0 +1,23 @@
+          var onRun = function(context) {
+          var doc = doc || context.document
+var currentPage = doc.currentPage()
+var currentPageChildren = currentPage.children()
+
+var docTextStyles = doc.documentData().layerTextStyles().objects()
+var sharedStylelessCount = 0;
+
+var predicate = NSPredicate.predicateWithFormat("className == 'MSTextLayer' && (style.sharedObjectID == NULL)")
+var queryResult = currentPageChildren.filteredArrayUsingPredicate(predicate)
+
+doc.showMessage("Textlayers without shared text style: "+queryResult.count() + "layers. Selecting all of them.")
+
+[[doc currentPage] deselectAllLayers]
+var layers = queryResult
+
+// Loop through filtered layers and select them
+var loop = [layers objectEnumerator], layer;
+while (layer = [loop nextObject]) {
+	[layer select:true byExpandingSelection:true]
+}
+          };
+          

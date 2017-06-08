@@ -1,0 +1,24 @@
+{
+  "author" : "",
+  "commands" : [
+    {
+      "script" : "script.cocoascript",
+      "name" : "TextStylelessLayerSelection",
+      "handlers" : {
+        "run" : "onRun"
+      },
+      "identifier" : "com.bohemiancoding.sketch.runscriptidentifier"
+    }
+  ],
+  "menu" : {
+    "title" : "TextStylelessLayerSelection",
+    "items" : [
+      "com.bohemiancoding.sketch.runscriptidentifier"
+    ]
+  },
+  "identifier" : "com.example.sketch.b38a9896-4389-4495-b3ec-22db745d8ef0",
+  "version" : "1.0",
+  "description" : "",
+  "authorEmail" : "",
+  "name" : "TextStylelessLayerSelection"
+}
