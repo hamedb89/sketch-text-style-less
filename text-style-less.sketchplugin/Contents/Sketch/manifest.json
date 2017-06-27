@@ -21,5 +21,5 @@
   "description" : "Counts and selects all textlayers without a shared textstyle",
   "icon": "icons/selectTextstylessTextlayers.png",
   "authorEmail" : "hi@hi@hamedbahrami.de",
-  "name" : "Select Textlayers wihout shared textstyles"
+  "name" : "Select Textlayers without shared textstyles"
 }
