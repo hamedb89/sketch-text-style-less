@@ -11,7 +11,14 @@ var onRun = function(context) {
 
 	doc.showMessage("Textlayers without shared text style: "+queryResult.count() + "layers. Selecting all of them.")
 
-	[[doc currentPage] deselectAllLayers]
+	// Sketch API change sinc V45
+	if (currentPage.deselectAllLayers) {
+		currentPage.deselectAllLayers()
+	}
+	else{
+		currentPage.changeSelectionBySelectingLayers_([]);
+	}
+
 	var layers = queryResult
 
 	// Loop through filtered layers and select them
